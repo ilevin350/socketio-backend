@@ -8,7 +8,7 @@ io.sockets.on('connection', function (socket) {
         console.log('socket disconnected');
     });
 
-    socket.emit('text', 'wow. such event. very real time.');
+    socket.emit('chat', 'This is a test of socket.io!');
 });
 
 server.listen(3000);
